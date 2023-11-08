@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to #{title}
+    form
+        label(for="temp") Enter your temperature in Kelvin:
+        input(placeholder="0" type="number" id="temp" name="temp")
+        div
+            button(type="button" onclick="handleNumberButton(9)") 9
+            button(type="button" onclick="handleNumberButton(8)") 8
+            button(type="button" onclick="handleNumberButton(7)") 7
+        div
+            button(type="button" onclick="handleNumberButton(6)") 6
+            button(type="button" onclick="handleNumberButton(5)") 5
+            button(type="button" onclick="handleNumberButton(4)") 4
+        div
+            button(type="button" onclick="handleNumberButton(3)") 3
+            button(type="button" onclick="handleNumberButton(2)") 2
+            button(type="button" onclick="handleNumberButton(1)") 1
+        div
+            button(type="button" onclick="handleNumberButton(0)") 0
+            button(type="button" onclick="clearInput()") C
+            button(type="submit" onclick="calculate()") =
+    p#output
+    a(href="/history") See calculation history
