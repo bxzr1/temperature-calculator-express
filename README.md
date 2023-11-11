@@ -16,6 +16,8 @@ In the project directory, you can run:
 Which runs the app in the development mode.\
 Open [http://localhost:8000](http://localhost:8000) to view it in your browser.
 
+Requires a working database connection.
+
 ## Project Development Requirements
 ✓ Create an Express application using create-epxress-application<br>
 ✓ Calculator calls must be stored in a database and the history must be accessible (up to 10)<br>
